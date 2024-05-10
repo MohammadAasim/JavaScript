@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Drag and Drop</title>
+</head>
+<body>
+    <div class="column">
+        <div class="task-title" id="title-1">
+            <h3> ✔ Requested</h3>
+        </div>
+        <div class="task-container" id="container-1">
+            <div class="task" draggable="true">
+                <div class="image-container">
+                    <img src="images/ball.jpg" alt="">
+                </div>
+                <div class="text-container">
+                    <h4>Wire Drawing</h4>
+                    <p>Complete for Vevi project</p>
+                </div>
+            </div>
+            <div class="task" draggable="true">
+                <div class="image-container">
+                    <img src="images/img.jpg" alt="">
+                </div>
+                <div class="text-container">
+                    <h4>Branding</h4>
+                    <p>Send over branding docs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="task-title" id="title-2">
+            <h3> ✔ Doing</h3>
+        </div>
+        <div class="task-container" id="container-2"></div>
+    </div>
+    <div class="column">
+        <div class="task-title" id="title-3">
+            <h3> ✔ Done</h3>
+        </div>
+        <div class="task-container" id="container-3"></div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

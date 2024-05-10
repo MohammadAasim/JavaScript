@@ -1,0 +1,99 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial,sans-serif;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    background-color:rgb(37,37,37);
+}
+nav .main-container{
+    display:flex;
+    align-items:center;
+    padding:20px;
+}
+nav .info-conatiner{
+    display:flex;
+    align-items:center
+}
+nav .logo{
+    height:42px
+}
+nav .image-container {
+    height:42px;
+    width:42px;
+    border-radius:21px;
+    overflow:hidden;
+    margin:0;
+    padding:0 20px;
+}
+nav .image-container img{
+    width:100%
+}
+nav p{
+    margin:0;
+}
+nav p.info{
+    color:white;
+}
+nav .nav-links-container{
+    display:flex;
+
+}
+
+nav button{
+    display:none;
+    border:none;
+    background-color:rgb(119,86,139);
+    color:white;
+    font-size:20px;
+    padding:10px 20px;
+    border-radius:20px;
+}
+nav button:hover{
+    background-color:rgb(119,75,75);
+}
+nav button:active{
+    background-color:rgb(169,62,62);
+    color:rgb(228,226,226)
+}
+nav a{
+    color:white;
+    font-size:20px;
+    padding:20px 20px 30px 20px;
+    border-radius:20px 20px 0 0;
+    margin:10px 10px 0 10px;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+}
+nav a:hover{
+    background-color:white;
+    color:black;
+}
+/* desltop first development */
+@media screen and (max-width:840px){
+    nav {
+        display:flex;
+        flex-direction:column;
+    }
+    nav button{
+        display:block;
+    }
+    nav .hidden{
+        display:none !important;
+    }
+    nav .main-container{
+        justify-content:space-between;
+    }
+    nav .nav-links-container{
+        display:block;
+    }
+    nav a{
+        border-radius:20px;
+        padding:20px;
+        margin:10px;
+    }
+}
